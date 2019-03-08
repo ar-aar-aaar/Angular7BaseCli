@@ -14,12 +14,14 @@ import { MatToolbarModule,
         MatInputModule,
         MatProgressBarModule,
         MatSnackBarModule,
-        MatSelectModule } from '@angular/material';
+        MatSelectModule,
+        MatCardModule } from '@angular/material';
 
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -30,7 +32,8 @@ export const MATERIAL_COMPONENTS = [
   MatInputModule,
   MatProgressBarModule,
   MatSnackBarModule,
-  MatSelectModule
+  MatSelectModule,
+  MatCardModule
 ]
 
 @NgModule({
@@ -39,7 +42,8 @@ export const MATERIAL_COMPONENTS = [
     MainComponent,
     AboutComponent,
     ContactComponent,
-    FormularioComponent
+    FormularioComponent,
+    HelloWorldComponent
   ],
   imports: [
     BrowserModule,

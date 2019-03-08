@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
