@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-hello-world',
@@ -16,7 +15,7 @@ export class HelloWorldComponent implements OnInit {
   }
 
   clickLike(message: string){
-    this.messageReturn.emit(`Me gustó el chiste, $(message)`);
+    this.messageReturn.emit(`Me gustó el chiste, ${message}`);
   }
 
 

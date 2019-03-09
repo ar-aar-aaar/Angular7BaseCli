@@ -6,7 +6,7 @@
   <button mat-raised-button color="primary" (click)="consulta()">Joke!</button>
   <br/>
   <button mat-raised-button color="primary" (click)="raiseNotification()">Rise Notification!</button>
-  <app-hello-world [message]="messageAbout" (clickLike)="mensajeDesdeHolaMundo()"></app-hello-world>
+  <app-hello-world [message]="messageAbout" (messageReturn)="mensajeDesdeHolaMundo($event)"></app-hello-world>
 </div>
 
 <h3>{{mensajeRespuesta}}</h3>
