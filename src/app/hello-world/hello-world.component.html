@@ -4,7 +4,7 @@
       <mat-card-title>Shiba Inu</mat-card-title>
       <mat-card-subtitle>Dog Breed</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="https://i.kym-cdn.com/entries/icons/mobile/000/013/564/doge.jpg" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <p>
         {{message}}
@@ -12,6 +12,6 @@
     </mat-card-content>
     <mat-card-actions>
       <button mat-button (click)="clickLike(message)">LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button (click)="clickShare()">SHARE</button>
     </mat-card-actions>
   </mat-card>

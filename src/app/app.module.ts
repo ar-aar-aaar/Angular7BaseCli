@@ -22,6 +22,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { AltaPersonasComponent } from './alta-personas/alta-personas.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -43,7 +44,8 @@ export const MATERIAL_COMPONENTS = [
     AboutComponent,
     ContactComponent,
     FormularioComponent,
-    HelloWorldComponent
+    HelloWorldComponent,
+    AltaPersonasComponent
   ],
   imports: [
     BrowserModule,

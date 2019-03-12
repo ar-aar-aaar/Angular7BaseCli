@@ -1,0 +1,34 @@
+<form [formGroup]="registroForm" class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Nombre(s)" formControlName="nombre" type="text">
+    <mat-error>
+      <span *ngIf="registroForm?.controls?.nombre?.errors?.required">Valor requerido</span>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Apellido Paterno" formControlName="apPaterno" type="text">
+    <mat-error>
+      <span *ngIf="registroForm?.controls?.apPaterno?.errors?.required">Valor requerido</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Apellido Materno" formControlName="apMaterno" type="text">
+    <mat-error>
+      <span *ngIf="registroForm?.controls?.apMaterno?.errors?.required">Valor requerido</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select matInput placeholder="Nivel" formControlName="idNivel">
+      <mat-option *ngFor="let nivel of niveles"  [value]="nivel.id">{{nivel.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="botoncito">
+      <button mat-raised-button color="primary" type="submit" (click)="submit()">Pusheame 7u7</button>
+      <button mat-raised-button color="accent" (click)="actionBoton()">Otro botonito</button>
+  </div>
+
+  
+</form>

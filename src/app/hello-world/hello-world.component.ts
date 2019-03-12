@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-hello-world',
@@ -9,7 +10,9 @@ export class HelloWorldComponent implements OnInit {
   @Input() message: string;
   @Output() messageReturn = new EventEmitter<string>();
 
-  constructor() { }
+  constructor(
+      private _data: DataService
+      ) { }
 
   ngOnInit() {
   }
@@ -18,6 +21,7 @@ export class HelloWorldComponent implements OnInit {
     this.messageReturn.emit(`Me gustó el chiste, ${message}`);
   }
 
-
-
+  	clickShare(){
+	  this._data.setGeneralNotificationMessage(`wow such notification very informative wow`);
+	}
 }
